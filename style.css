@@ -1,0 +1,29 @@
+.histo {
+  color: #333;
+  font: 9px Monaco;
+  height: 380px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  width: 640px;
+}
+  .histo .origo {
+    background-color: black;
+    width: 3px;
+  }
+  .histo .axis {
+    background-color: #333;
+  }
+  .histo .gram {
+    padding: 30px;
+  }
+
+.histo.show {
+  opacity: 1;
+}
+.histo .bar {
+  background-color: black;
+  width: 15px;
+}
+.histo .negative-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+}

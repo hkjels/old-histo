@@ -1,0 +1,19 @@
+{
+  "name": "histo",
+  "repo": "hkjels/histo",
+  "description": "Histogram component",
+  "version": "0.0.1",
+  "keywords": ["histogram", "histo", "graph", "chart"],
+  "dependencies": {
+    "component/autoscale-canvas": "*",
+    "component/dom": "*",
+    "component/emitter": "*",
+    "component/max": "*",
+    "component/object": "*",
+    "component/style": "*",
+    "hkjels/object-to-array": "*"
+  },
+  "scripts": ["index.js", "template.js"],
+  "styles": ["style.css"],
+  "main": "index.js"
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>High low</title>
+    <link href="/build/build.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="content"></div>
+
+  <script src="/build/build.js"></script>
+  <script>
+
+    /**
+     * Module dependencies.
+     */
+
+    var Histo = require('histo'),
+        histo = new Histo('images', [3, 4, 2, 1]);
+
+    // Content container
+
+    var content = document.querySelector('#content');
+
+    // Add histogram
+
+    histo
+      .plot({ 'five': 5, 'four': 4, 'three': 3, 'two': 2, 'one': 1 })
+      .plot({
+        'negative one': -1,
+        'negative two': -2,
+        'negative three': -3,
+        'negative four': -4,
+        'negative five': -5
+      });
+
+    content.appendChild(histo.show());
+
+    histo.sort();
+
+  </script>
+</body>
+</html>
